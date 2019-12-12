@@ -12,8 +12,8 @@ use.
       * minecraft_server.jar
       * eula.txt
       * etc...
-1. The minecraft server must be named minecraft_server.jar since this is currently how the program checks to see if a directory contains a minecraft server (since there might be other folders other than server folders under minecraft_root)
-1. I wrote this on Ubuntu using the commands and used the commands top, service, and tail so if your on a os where those commands dont exist or have different outputs then let me know and I can come up with a better way
+2. The minecraft server must be named minecraft_server.jar since this is currently how the program checks to see if a directory contains a minecraft server (since there might be other folders other than server folders under minecraft_root)
+3. I wrote this on Ubuntu using the commands and used the commands top, service, and tail so if your on a os where those commands dont exist or have different outputs then let me know and I can come up with a better way
 
 ### Supported commands
 Alright now to the fun part -- the commands. Currently, there are 5 commands:
@@ -76,7 +76,7 @@ into a cronjob to run daily to backup the world data on each server every day an
   * A time stamp
   * The most recent
   * A time diff (like 5 days ago)
-1. Update the time stamping process to be a full time stamp instead of an iso formated date to allow multiple backups per day without overwrite
-1. Show memory percent based on allocated memory instead of rigs memory as well
-1. Network stats of server (somehow this has to be possible but might require modding the servers)
-
+2. Update the time stamping process to be a full time stamp instead of an iso formated date to allow multiple backups per day without overwrite
+3. Show memory percent based on allocated memory instead of rigs memory as well
+4. Network stats of server (somehow this has to be possible but might require modding the servers)
+5. Have the command reboot the server and display a warning message to allow daily reboots to keep the server healthy
