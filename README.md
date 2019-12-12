@@ -28,14 +28,14 @@ the list command just lists the minecraft servers under the root directory since
 
 ex.
 
-    cmd.py list
+    mc-cmds.py list
 
 #### env
 The env command just lists the environment variables the script uses and what they are so you know what to change to customize the script.
 
 ex.
 
-    cmd.py env
+    mc-cmds.py env
 
 #### backup
 The backup command takes the current servers world and places a copy of the folder with the date appended to the backups folder set with the env variables.
@@ -43,11 +43,11 @@ This command can be supplied with **all** instead of a server name to backup the
 
 ex.
 
-    cmd.py backup serv1
+    mc-cmd.py backup serv1
 #### clean
 The clean command takes in a server as an argument (again the **all** option is also available) and an integer argument specifying the number of backups to keep! Therefore if the command was invoked with:
 
-    cmd.py clean serv1 -n 5
+    mc-cmds.py clean serv1 -n 5
 
 all of the backups *except* the 5 most recent backups in the serv1 backups folder would be removed
 
@@ -60,14 +60,14 @@ The status command will specify some basic stats about a server such as:
 
 ex.
 
-    cmd.py status serv1
+    mc-cmds.py status serv1
 
 
 ### Intended Setup
 I put the commands:
 
-    cmd.py backup serv1
-    cmd.py clean serv1 -n 10
+    mc-cmds.py backup serv1
+    mc-cmds.py clean serv1 -n 10
 
 into a cronjob to run daily to backup the world data on each server every day and only keep 10 copies at a time.
 
