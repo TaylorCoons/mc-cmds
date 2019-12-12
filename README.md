@@ -16,7 +16,7 @@ use.
 1. I wrote this on Ubuntu using the commands and used the commands top, service, and tail so if your on a os where those commands dont exist or have different outputs then let me know and I can come up with a better way
 
 ### Supported commands
-Alright now to the fun part. Currently, there are 4 commands they are:
+Alright now to the fun part -- the commands. Currently, there are 5 commands:
 1. list
 2. env
 3. backup
